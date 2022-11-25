@@ -1,1 +1,1 @@
-web: gunicorn translator.wsgi
+waitress-serve --listen=*:8000 translator.wsgi:application
